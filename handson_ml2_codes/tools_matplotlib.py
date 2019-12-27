@@ -23,7 +23,7 @@ import matplotlib
 # In[2]:
 
 
-get_ipython().run_line_magic('matplotlib', 'inline')
+# get_ipython().run_line_magic('matplotlib', 'inline')
 # matplotlib.use("TKAgg")  # use this instead in your program if you want to use Tk as your graphics backend.
 
 
@@ -674,7 +674,7 @@ plt.show()
 # In[45]:
 
 
-get_ipython().run_line_magic('matplotlib', 'nbagg')
+# get_ipython().run_line_magic('matplotlib', 'nbagg')
 import matplotlib.animation as animation
 
 

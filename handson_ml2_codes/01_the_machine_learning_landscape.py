@@ -69,7 +69,7 @@ datapath = os.path.join("datasets", "lifesat", "")
 
 
 # To plot pretty figures directly within Jupyter
-get_ipython().run_line_magic('matplotlib', 'inline')
+# get_ipython().run_line_magic('matplotlib', 'inline')
 import matplotlib as mpl
 mpl.rc('axes', labelsize=14)
 mpl.rc('xtick', labelsize=12)

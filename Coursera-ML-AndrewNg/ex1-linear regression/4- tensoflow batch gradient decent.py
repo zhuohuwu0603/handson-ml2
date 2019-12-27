@@ -26,7 +26,8 @@ from helper import linear_regression as lr  # my own module
 from helper import general as general
 
 import tensorflow as tf
-
+import tensorflow.compat.v1 as tf
+tf.disable_v2_behavior()
 
 # # prepare data
 

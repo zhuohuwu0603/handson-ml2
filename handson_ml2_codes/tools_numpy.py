@@ -192,7 +192,7 @@ np.random.randn(3,4)
 # In[22]:
 
 
-# get_ipython().run_line_magic('matplotlib', 'inline')
+get_ipython().run_line_magic('matplotlib', 'inline')
 import matplotlib.pyplot as plt
 
 

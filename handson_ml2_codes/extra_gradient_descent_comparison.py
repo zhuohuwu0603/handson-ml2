@@ -10,7 +10,7 @@
 
 import numpy as np
 
-# get_ipython().run_line_magic('matplotlib', 'nbagg')
+get_ipython().run_line_magic('matplotlib', 'nbagg')
 import matplotlib.pyplot as plt
 from matplotlib.animation import FuncAnimation
 

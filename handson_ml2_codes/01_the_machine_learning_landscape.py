@@ -23,13 +23,6 @@ import sys
 assert sys.version_info >= (3, 5)
 
 
-# In[4]:
-
-
-print(sys.version_info)
-print(sklearn.__version__)
-
-
 # In[2]:
 
 
@@ -40,7 +33,7 @@ assert sklearn.__version__ >= "0.20"
 
 # This function just merges the OECD's life satisfaction data and the IMF's GDP per capita data. It's a bit too long and boring and it's not specific to Machine Learning, which is why I left it out of the book.
 
-# In[11]:
+# In[3]:
 
 
 def prepare_country_stats(oecd_bli, gdp_per_capita):
@@ -58,7 +51,7 @@ def prepare_country_stats(oecd_bli, gdp_per_capita):
 
 # The code in the book expects the data files to be located in the current directory. I just tweaked it here to fetch the files in datasets/lifesat.
 
-# In[7]:
+# In[4]:
 
 
 import os
@@ -69,14 +62,14 @@ datapath = os.path.join("datasets", "lifesat", "")
 
 
 # To plot pretty figures directly within Jupyter
-# get_ipython().run_line_magic('matplotlib', 'inline')
+get_ipython().run_line_magic('matplotlib', 'inline')
 import matplotlib as mpl
 mpl.rc('axes', labelsize=14)
 mpl.rc('xtick', labelsize=12)
 mpl.rc('ytick', labelsize=12)
 
 
-# In[9]:
+# In[6]:
 
 
 # Download the data
@@ -89,7 +82,7 @@ for filename in ("oecd_bli_2015.csv", "gdp_per_capita.csv"):
     urllib.request.urlretrieve(url, datapath + filename)
 
 
-# In[12]:
+# In[7]:
 
 
 # Code example
@@ -163,7 +156,7 @@ print(model.predict(X_new)) # outputs [[ 5.96242338]]
 
 # Create a function to save the figures.
 
-# In[13]:
+# In[8]:
 
 
 # Where to save the figures
@@ -182,7 +175,7 @@ def save_fig(fig_id, tight_layout=True, fig_extension="png", resolution=300):
 
 # Make this notebook's output stable across runs:
 
-# In[14]:
+# In[9]:
 
 
 np.random.seed(42)
@@ -194,7 +187,7 @@ np.random.seed(42)
 # Download the CSV from http://stats.oecd.org/index.aspx?DataSetCode=BLI
 # and save it to `datasets/lifesat/`.
 
-# In[15]:
+# In[10]:
 
 
 oecd_bli = pd.read_csv(datapath + "oecd_bli_2015.csv", thousands=',')
@@ -203,7 +196,7 @@ oecd_bli = oecd_bli.pivot(index="Country", columns="Indicator", values="Value")
 oecd_bli.head(2)
 
 
-# In[16]:
+# In[11]:
 
 
 oecd_bli["Life satisfaction"].head()
@@ -213,7 +206,7 @@ oecd_bli["Life satisfaction"].head()
 
 # Just like above, you can update the GDP per capita data if you want. Just download data from http://goo.gl/j1MSKe (=> imf.org) and save it to `datasets/lifesat/`.
 
-# In[24]:
+# In[12]:
 
 
 gdp_per_capita = pd.read_csv(datapath+"gdp_per_capita.csv", thousands=',', delimiter='\t',
@@ -223,7 +216,7 @@ gdp_per_capita.set_index("Country", inplace=True)
 gdp_per_capita.head(2)
 
 
-# In[25]:
+# In[13]:
 
 
 full_country_stats = pd.merge(left=oecd_bli, right=gdp_per_capita, left_index=True, right_index=True)
@@ -231,13 +224,13 @@ full_country_stats.sort_values(by="GDP per capita", inplace=True)
 full_country_stats
 
 
-# In[26]:
+# In[14]:
 
 
 full_country_stats[["GDP per capita", 'Life satisfaction']].loc["United States"]
 
 
-# In[20]:
+# In[15]:
 
 
 remove_indices = [0, 1, 6, 8, 33, 34, 35]
@@ -247,7 +240,7 @@ sample_data = full_country_stats[["GDP per capita", 'Life satisfaction']].iloc[k
 missing_data = full_country_stats[["GDP per capita", 'Life satisfaction']].iloc[remove_indices]
 
 
-# In[21]:
+# In[16]:
 
 
 sample_data.plot(kind='scatter', x="GDP per capita", y='Life satisfaction', figsize=(5,3))
@@ -270,13 +263,13 @@ save_fig('money_happy_scatterplot')
 plt.show()
 
 
-# In[22]:
+# In[17]:
 
 
 sample_data.to_csv(os.path.join("datasets", "lifesat", "lifesat.csv"))
 
 
-# In[23]:
+# In[18]:
 
 
 sample_data.loc[list(position_text.keys())]

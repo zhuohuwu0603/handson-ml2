@@ -28,8 +28,8 @@ assert sklearn.__version__ >= "0.20"
 
 try:
     # %tensorflow_version only exists in Colab.
-    # get_ipython().run_line_magic('tensorflow_version', '2.x')
-    # get_ipython().system('pip install -q -U tensorflow-addons')
+    get_ipython().run_line_magic('tensorflow_version', '2.x')
+    get_ipython().system('pip install -q -U tensorflow-addons')
     IS_COLAB = True
 except Exception:
     IS_COLAB = False
@@ -53,7 +53,7 @@ np.random.seed(42)
 tf.random.set_seed(42)
 
 # To plot pretty figures
-# get_ipython().run_line_magic('matplotlib', 'inline')
+get_ipython().run_line_magic('matplotlib', 'inline')
 import matplotlib as mpl
 import matplotlib.pyplot as plt
 mpl.rc('axes', labelsize=14)

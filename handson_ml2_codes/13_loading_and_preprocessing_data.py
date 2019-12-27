@@ -28,8 +28,8 @@ assert sklearn.__version__ >= "0.20"
 
 try:
     # %tensorflow_version only exists in Colab.
-    # get_ipython().run_line_magic('tensorflow_version', '2.x')
-    # get_ipython().system('pip install -q -U tfx==0.15.0rc0')
+    get_ipython().run_line_magic('tensorflow_version', '2.x')
+    get_ipython().system('pip install -q -U tfx==0.15.0rc0')
     print("You can safely ignore the package incompatibility errors.")
 except Exception:
     pass
@@ -47,7 +47,7 @@ import os
 np.random.seed(42)
 
 # To plot pretty figures
-# get_ipython().run_line_magic('matplotlib', 'inline')
+get_ipython().run_line_magic('matplotlib', 'inline')
 import matplotlib as mpl
 import matplotlib.pyplot as plt
 mpl.rc('axes', labelsize=14)
@@ -545,7 +545,7 @@ for item in dataset:
 # In[45]:
 
 
-# get_ipython().run_cell_magic('writefile', 'person.proto', 'syntax = "proto3";\nmessage Person {\n  string name = 1;\n  int32 id = 2;\n  repeated string email = 3;\n}')
+get_ipython().run_cell_magic('writefile', 'person.proto', 'syntax = "proto3";\nmessage Person {\n  string name = 1;\n  int32 id = 2;\n  repeated string email = 3;\n}')
 
 
 # And let's compile it (the `--descriptor_set_out` and `--include_imports` options are only required for the `tf.io.decode_proto()` example below):
@@ -553,13 +553,13 @@ for item in dataset:
 # In[46]:
 
 
-# get_ipython().system('protoc person.proto --python_out=. --descriptor_set_out=person.desc --include_imports')
+get_ipython().system('protoc person.proto --python_out=. --descriptor_set_out=person.desc --include_imports')
 
 
 # In[47]:
 
 
-# get_ipython().system('ls person*')
+get_ipython().system('ls person*')
 
 
 # In[48]:

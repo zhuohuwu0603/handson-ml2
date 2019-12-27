@@ -33,7 +33,7 @@ import numpy as np
 import os
 
 # To plot pretty figures
-# # get_ipython().run_line_magic('matplotlib', 'inline')
+get_ipython().run_line_magic('matplotlib', 'inline')
 import matplotlib as mpl
 import matplotlib.pyplot as plt
 mpl.rc('axes', labelsize=14)
@@ -66,8 +66,6 @@ warnings.filterwarnings(action="ignore", message="^internal gelsd")
 import os
 import tarfile
 import urllib
-
-import urllib.request
 
 DOWNLOAD_ROOT = "https://raw.githubusercontent.com/ageron/handson-ml2/master/"
 HOUSING_PATH = os.path.join("datasets", "housing")
@@ -127,7 +125,7 @@ housing.describe()
 # In[9]:
 
 
-# # get_ipython().run_line_magic('matplotlib', 'inline')
+get_ipython().run_line_magic('matplotlib', 'inline')
 import matplotlib.pyplot as plt
 housing.hist(bins=50, figsize=(20,15))
 save_fig("attribute_histogram_plots")

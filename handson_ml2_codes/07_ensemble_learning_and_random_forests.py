@@ -34,7 +34,7 @@ import os
 np.random.seed(42)
 
 # To plot pretty figures
-# get_ipython().run_line_magic('matplotlib', 'inline')
+get_ipython().run_line_magic('matplotlib', 'inline')
 import matplotlib as mpl
 import matplotlib.pyplot as plt
 mpl.rc('axes', labelsize=14)
@@ -669,13 +669,13 @@ if xgboost is not None:  # not shown in the book
 # In[54]:
 
 
-# get_ipython().run_line_magic('timeit', 'xgboost.XGBRegressor().fit(X_train, y_train) if xgboost is not None else None')
+get_ipython().run_line_magic('timeit', 'xgboost.XGBRegressor().fit(X_train, y_train) if xgboost is not None else None')
 
 
 # In[55]:
 
 
-# get_ipython().run_line_magic('timeit', 'GradientBoostingRegressor().fit(X_train, y_train)')
+get_ipython().run_line_magic('timeit', 'GradientBoostingRegressor().fit(X_train, y_train)')
 
 
 # # Exercise solutions

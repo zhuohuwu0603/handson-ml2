@@ -34,7 +34,7 @@ import os
 np.random.seed(42)
 
 # To plot pretty figures
-# get_ipython().run_line_magic('matplotlib', 'inline')
+get_ipython().run_line_magic('matplotlib', 'inline')
 import matplotlib as mpl
 import matplotlib.pyplot as plt
 mpl.rc('axes', labelsize=14)
@@ -525,13 +525,13 @@ kmeans.inertia_
 # In[39]:
 
 
-# get_ipython().run_line_magic('timeit', '-n 50 KMeans(algorithm="elkan").fit(X)')
+get_ipython().run_line_magic('timeit', '-n 50 KMeans(algorithm="elkan").fit(X)')
 
 
 # In[40]:
 
 
-# get_ipython().run_line_magic('timeit', '-n 50 KMeans(algorithm="full").fit(X)')
+get_ipython().run_line_magic('timeit', '-n 50 KMeans(algorithm="full").fit(X)')
 
 
 # ### Mini-Batch K-Means
@@ -652,13 +652,13 @@ best_kmeans.score(X)
 # In[52]:
 
 
-# get_ipython().run_line_magic('timeit', 'KMeans(n_clusters=5).fit(X)')
+get_ipython().run_line_magic('timeit', 'KMeans(n_clusters=5).fit(X)')
 
 
 # In[53]:
 
 
-# get_ipython().run_line_magic('timeit', 'MiniBatchKMeans(n_clusters=5).fit(X)')
+get_ipython().run_line_magic('timeit', 'MiniBatchKMeans(n_clusters=5).fit(X)')
 
 
 # That's *much* faster! However, its performance is often lower (higher inertia), and it keeps degrading as _k_ increases. Let's plot the inertia ratio and the training time ratio between Mini-batch K-Means and regular K-Means:

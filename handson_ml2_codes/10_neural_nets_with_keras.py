@@ -28,7 +28,7 @@ assert sklearn.__version__ >= "0.20"
 
 try:
     # %tensorflow_version only exists in Colab.
-    # get_ipython().run_line_magic('tensorflow_version', '2.x')
+    get_ipython().run_line_magic('tensorflow_version', '2.x')
 except Exception:
     pass
 
@@ -44,7 +44,7 @@ import os
 np.random.seed(42)
 
 # To plot pretty figures
-# get_ipython().run_line_magic('matplotlib', 'inline')
+get_ipython().run_line_magic('matplotlib', 'inline')
 import matplotlib as mpl
 import matplotlib.pyplot as plt
 mpl.rc('axes', labelsize=14)
@@ -931,8 +931,8 @@ history = model.fit(X_train, y_train, epochs=30,
 # In[87]:
 
 
-# get_ipython().run_line_magic('load_ext', 'tensorboard')
-# get_ipython().run_line_magic('tensorboard', '--logdir=./my_logs --port=6006')
+get_ipython().run_line_magic('load_ext', 'tensorboard')
+get_ipython().run_line_magic('tensorboard', '--logdir=./my_logs --port=6006')
 
 
 # In[88]:

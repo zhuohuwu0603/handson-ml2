@@ -87,7 +87,7 @@ video[2]  # 3rd element
 # In[6]:
 
 
-# get_ipython().run_line_magic('matplotlib', 'inline')
+get_ipython().run_line_magic('matplotlib', 'inline')
 import matplotlib.pyplot as plt
 
 

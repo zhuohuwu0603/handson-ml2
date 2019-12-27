@@ -28,9 +28,9 @@ assert sklearn.__version__ >= "0.20"
 
 try:
     # %tensorflow_version only exists in Colab.
-    get_ipython().run_line_magic('tensorflow_version', '2.x')
-    get_ipython().system('apt update && apt install -y libpq-dev libsdl2-dev swig xorg-dev xvfb')
-    get_ipython().system('pip install -q -U tf-agents-nightly pyvirtualdisplay gym[atari]')
+    # get_ipython().run_line_magic('tensorflow_version', '2.x')
+    # get_ipython().system('apt update && apt install -y libpq-dev libsdl2-dev swig xorg-dev xvfb')
+    # get_ipython().system('pip install -q -U tf-agents-nightly pyvirtualdisplay gym[atari]')
     IS_COLAB = True
 except Exception:
     IS_COLAB = False
@@ -54,7 +54,7 @@ np.random.seed(42)
 tf.random.set_seed(42)
 
 # To plot pretty figures
-get_ipython().run_line_magic('matplotlib', 'inline')
+# get_ipython().run_line_magic('matplotlib', 'inline')
 import matplotlib as mpl
 import matplotlib.pyplot as plt
 mpl.rc('axes', labelsize=14)
@@ -1696,7 +1696,7 @@ frame_images[0].save(image_path, format='GIF',
 # In[121]:
 
 
-get_ipython().run_cell_magic('html', '', '<img src="images/rl/breakout.gif" />')
+# get_ipython().run_cell_magic('html', '', '<img src="images/rl/breakout.gif" />')
 
 
 # # Extra material
@@ -1720,13 +1720,13 @@ for i in range(1000000):
 # In[123]:
 
 
-get_ipython().run_line_magic('timeit', 'mem.append(1)')
+# get_ipython().run_line_magic('timeit', 'mem.append(1)')
 
 
 # In[124]:
 
 
-get_ipython().run_line_magic('timeit', '[mem[i] for i in np.random.randint(1000000, size=5)]')
+# get_ipython().run_line_magic('timeit', '[mem[i] for i in np.random.randint(1000000, size=5)]')
 
 
 # Alternatively, you could use a rotating list like this `ReplayMemory` class. This would make random access faster for large replay memories:
@@ -1763,13 +1763,13 @@ mem.sample(5)
 # In[127]:
 
 
-get_ipython().run_line_magic('timeit', 'mem.append(1)')
+# get_ipython().run_line_magic('timeit', 'mem.append(1)')
 
 
 # In[128]:
 
 
-get_ipython().run_line_magic('timeit', 'mem.sample(5)')
+# get_ipython().run_line_magic('timeit', 'mem.sample(5)')
 
 
 # ## Creating a Custom TF-Agents Environment

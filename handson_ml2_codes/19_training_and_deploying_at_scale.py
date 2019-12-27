@@ -28,11 +28,11 @@ assert sklearn.__version__ >= "0.20"
 
 try:
     # %tensorflow_version only exists in Colab.
-    get_ipython().run_line_magic('tensorflow_version', '2.x')
-    get_ipython().system('echo "deb http://storage.googleapis.com/tensorflow-serving-apt stable tensorflow-model-server tensorflow-model-server-universal" > /etc/apt/sources.list.d/tensorflow-serving.list')
-    get_ipython().system('curl https://storage.googleapis.com/tensorflow-serving-apt/tensorflow-serving.release.pub.gpg | apt-key add -')
-    get_ipython().system('apt update && apt-get install -y tensorflow-model-server')
-    get_ipython().system('pip install -q -U tensorflow-serving-api')
+    # get_ipython().run_line_magic('tensorflow_version', '2.x')
+    # get_ipython().system('echo "deb http://storage.googleapis.com/tensorflow-serving-apt stable tensorflow-model-server tensorflow-model-server-universal" > /etc/apt/sources.list.d/tensorflow-serving.list')
+    # get_ipython().system('curl https://storage.googleapis.com/tensorflow-serving-apt/tensorflow-serving.release.pub.gpg | apt-key add -')
+    # get_ipython().system('apt update && apt-get install -y tensorflow-model-server')
+    # get_ipython().system('pip install -q -U tensorflow-serving-api')
     IS_COLAB = True
 except Exception:
     IS_COLAB = False
@@ -56,7 +56,7 @@ np.random.seed(42)
 tf.random.set_seed(42)
 
 # To plot pretty figures
-get_ipython().run_line_magic('matplotlib', 'inline')
+# get_ipython().run_line_magic('matplotlib', 'inline')
 import matplotlib as mpl
 import matplotlib.pyplot as plt
 mpl.rc('axes', labelsize=14)
@@ -128,7 +128,7 @@ model_path
 # In[6]:
 
 
-get_ipython().system('rm -rf {model_name}')
+# get_ipython().system('rm -rf {model_name}')
 
 
 # In[7]:
@@ -150,25 +150,25 @@ for root, dirs, files in os.walk(model_name):
 # In[9]:
 
 
-get_ipython().system('saved_model_cli show --dir {model_path}')
+# get_ipython().system('saved_model_cli show --dir {model_path}')
 
 
 # In[10]:
 
 
-get_ipython().system('saved_model_cli show --dir {model_path} --tag_set serve')
+# get_ipython().system('saved_model_cli show --dir {model_path} --tag_set serve')
 
 
 # In[11]:
 
 
-get_ipython().system('saved_model_cli show --dir {model_path} --tag_set serve                       --signature_def serving_default')
+# get_ipython().system('saved_model_cli show --dir {model_path} --tag_set serve                       --signature_def serving_default')
 
 
 # In[12]:
 
 
-get_ipython().system('saved_model_cli show --dir {model_path} --all')
+# get_ipython().system('saved_model_cli show --dir {model_path} --all')
 
 
 # Let's write the new instances to a `npy` file so we can pass them easily to our model:
@@ -191,7 +191,7 @@ input_name
 # In[15]:
 
 
-get_ipython().system('saved_model_cli run --dir {model_path} --tag_set serve                      --signature_def serving_default                         --inputs {input_name}=my_mnist_tests.npy')
+# get_ipython().system('saved_model_cli run --dir {model_path} --tag_set serve                      --signature_def serving_default                         --inputs {input_name}=my_mnist_tests.npy')
 
 
 # In[16]:
@@ -231,13 +231,13 @@ os.environ["MODEL_DIR"] = os.path.split(os.path.abspath(model_path))[0]
 # In[18]:
 
 
-get_ipython().run_cell_magic('bash', '--bg', 'nohup tensorflow_model_server \\\n     --rest_api_port=8501 \\\n     --model_name=my_mnist_model \\\n     --model_base_path="${MODEL_DIR}" >server.log 2>&1')
+# get_ipython().run_cell_magic('bash', '--bg', 'nohup tensorflow_model_server \\\n     --rest_api_port=8501 \\\n     --model_name=my_mnist_model \\\n     --model_base_path="${MODEL_DIR}" >server.log 2>&1')
 
 
 # In[19]:
 
 
-get_ipython().system('tail server.log')
+# get_ipython().system('tail server.log')
 
 
 # In[20]:

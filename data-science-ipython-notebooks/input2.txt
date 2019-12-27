@@ -1,0 +1,111 @@
+./misc/regex.ipynb
+./misc/Algorithmia.ipynb
+./deep-learning/theano-tutorial/theano_mlp/theano_mlp.ipynb
+./deep-learning/theano-tutorial/rnn_tutorial/simple_rnn.ipynb
+./deep-learning/theano-tutorial/rnn_tutorial/lstm_text.ipynb
+./deep-learning/theano-tutorial/scan_tutorial/scan_tutorial.ipynb
+./deep-learning/theano-tutorial/intro_theano/logistic_regression.ipynb
+./deep-learning/theano-tutorial/intro_theano/intro_theano.ipynb
+./deep-learning/deep-dream/dream.ipynb
+./deep-learning/tensor-flow-examples/notebooks/5_ui/loss_visualization.ipynb
+./deep-learning/tensor-flow-examples/notebooks/5_ui/graph_visualization.ipynb
+./deep-learning/tensor-flow-examples/notebooks/4_multi_gpu/multigpu_basics.ipynb
+./deep-learning/tensor-flow-examples/notebooks/1_intro/basic_operations.ipynb
+./deep-learning/tensor-flow-examples/notebooks/3_neural_networks/convolutional_network.ipynb
+./deep-learning/tensor-flow-examples/notebooks/3_neural_networks/recurrent_network.ipynb
+./deep-learning/tensor-flow-examples/notebooks/3_neural_networks/multilayer_perceptron.ipynb
+./deep-learning/tensor-flow-examples/notebooks/3_neural_networks/alexnet.ipynb
+./deep-learning/tensor-flow-examples/notebooks/2_basic_classifiers/nearest_neighbor.ipynb
+./deep-learning/tensor-flow-examples/notebooks/2_basic_classifiers/logistic_regression.ipynb
+./deep-learning/tensor-flow-examples/notebooks/2_basic_classifiers/linear_regression.ipynb
+./deep-learning/keras-tutorial/0. Preamble.ipynb
+./deep-learning/keras-tutorial/2.2.1 Supervised Learning - ConvNet HandsOn Part I.ipynb
+./deep-learning/keras-tutorial/2.1 Supervised Learning - ConvNets.ipynb
+./deep-learning/keras-tutorial/1.1 Introduction - Deep Learning and ANN.ipynb
+./deep-learning/keras-tutorial/1.4 (Extra) A Simple Implementation of ANN for MNIST.ipynb
+./deep-learning/keras-tutorial/1.3 Introduction - Keras.ipynb
+./deep-learning/keras-tutorial/4. Conclusions.ipynb
+./deep-learning/keras-tutorial/2.2.2 Supervised Learning - ConvNet HandsOn Part II.ipynb
+./deep-learning/keras-tutorial/1.2 Introduction - Theano.ipynb
+./deep-learning/keras-tutorial/2.3 Supervised Learning - Famous Models with Keras.ipynb
+./deep-learning/keras-tutorial/3.3 (Extra) LSTM for Sentence Generation.ipynb
+./deep-learning/keras-tutorial/3.2 RNN and LSTM.ipynb
+./deep-learning/keras-tutorial/3.1 Unsupervised Learning - AutoEncoders and Embeddings.ipynb
+./deep-learning/tensor-flow-exercises/3_regularization.ipynb
+./deep-learning/tensor-flow-exercises/6_lstm.ipynb
+./deep-learning/tensor-flow-exercises/5_word2vec.ipynb
+./deep-learning/tensor-flow-exercises/4_convolutions.ipynb
+./deep-learning/tensor-flow-exercises/2_fullyconnected.ipynb
+./deep-learning/tensor-flow-exercises/1_notmnist.ipynb
+./kaggle/titanic.ipynb
+./numpy/02.00-Introduction-to-NumPy.ipynb
+./numpy/02.05-Computation-on-arrays-broadcasting.ipynb
+./numpy/02.01-Understanding-Data-Types.ipynb
+./numpy/02.02-The-Basics-Of-NumPy-Arrays.ipynb
+./numpy/02.08-Sorting.ipynb
+./numpy/02.06-Boolean-Arrays-and-Masks.ipynb
+./numpy/02.03-Computation-on-arrays-ufuncs.ipynb
+./numpy/numpy.ipynb
+./numpy/02.04-Computation-on-arrays-aggregates.ipynb
+./numpy/02.09-Structured-Data-NumPy.ipynb
+./numpy/02.07-Fancy-Indexing.ipynb
+./analyses/churn.ipynb
+./python-data/unit_tests.ipynb
+./python-data/datetime.ipynb
+./python-data/pdb.ipynb
+./python-data/structs.ipynb
+./python-data/logs.ipynb
+./python-data/functions.ipynb
+./python-data/files.ipynb
+./python-data/structs_utils.ipynb
+./matplotlib/04.14-Visualization-With-Seaborn.ipynb
+./matplotlib/04.06-Customizing-Legends.ipynb
+./matplotlib/04.04-Density-and-Contour-Plots.ipynb
+./matplotlib/matplotlib-applied.ipynb
+./matplotlib/04.03-Errorbars.ipynb
+./matplotlib/matplotlib.ipynb
+./matplotlib/04.08-Multiple-Subplots.ipynb
+./matplotlib/04.02-Simple-Scatter-Plots.ipynb
+./matplotlib/04.00-Introduction-To-Matplotlib.ipynb
+./matplotlib/04.11-Settings-and-Stylesheets.ipynb
+./matplotlib/04.12-Three-Dimensional-Plotting.ipynb
+./matplotlib/04.09-Text-and-Annotation.ipynb
+./matplotlib/04.13-Geographic-Data-With-Basemap.ipynb
+./matplotlib/04.01-Simple-Line-Plots.ipynb
+./matplotlib/04.10-Customizing-Ticks.ipynb
+./matplotlib/04.07-Customizing-Colorbars.ipynb
+./matplotlib/04.05-Histograms-and-Binnings.ipynb
+./matplotlib/04.15-Further-Resources.ipynb
+./aws/aws.ipynb
+./commands/linux.ipynb
+./commands/misc.ipynb
+./mapreduce/mapreduce-python.ipynb
+./scipy/sampling.ipynb
+./scipy/hypothesis.ipynb
+./scipy/effect_size.ipynb
+./scikit-learn/scikit-learn-pca.ipynb
+./scikit-learn/scikit-learn-svm.ipynb
+./scikit-learn/scikit-learn-validation.ipynb
+./scikit-learn/fig_code/scikit-learn.ipynb
+./scikit-learn/scikit-learn-k-means.ipynb
+./scikit-learn/scikit-learn-linear-reg.ipynb
+./scikit-learn/scikit-learn-gmm.ipynb
+./scikit-learn/scikit-learn-random-forest.ipynb
+./scikit-learn/scikit-learn-intro.ipynb
+./spark/hdfs.ipynb
+./spark/spark.ipynb
+./pandas/03.10-Working-With-Strings.ipynb
+./pandas/03.08-Aggregation-and-Grouping.ipynb
+./pandas/03.06-Concat-And-Append.ipynb
+./pandas/03.11-Working-with-Time-Series.ipynb
+./pandas/03.13-Further-Resources.ipynb
+./pandas/03.09-Pivot-Tables.ipynb
+./pandas/03.01-Introducing-Pandas-Objects.ipynb
+./pandas/03.02-Data-Indexing-and-Selection.ipynb
+./pandas/03.03-Operations-in-Pandas.ipynb
+./pandas/03.12-Performance-Eval-and-Query.ipynb
+./pandas/03.00-Introduction-to-Pandas.ipynb
+./pandas/03.04-Missing-Values.ipynb
+./pandas/03.07-Merge-and-Join.ipynb
+./pandas/pandas.ipynb
+./pandas/03.05-Hierarchical-Indexing.ipynb

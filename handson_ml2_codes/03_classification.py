@@ -946,7 +946,7 @@ accuracy_score(y_test, y_pred)
 
 import os
 
-TITANIC_PATH = os.path.join("datasets", "titanic")
+TITANIC_PATH = os.path.join("./../datasets", "titanic")
 
 
 # In[101]:
@@ -1242,7 +1242,7 @@ import urllib
 DOWNLOAD_ROOT = "http://spamassassin.apache.org/old/publiccorpus/"
 HAM_URL = DOWNLOAD_ROOT + "20030228_easy_ham.tar.bz2"
 SPAM_URL = DOWNLOAD_ROOT + "20030228_spam.tar.bz2"
-SPAM_PATH = os.path.join("datasets", "spam")
+SPAM_PATH = os.path.join("./../datasets", "spam")
 
 def fetch_spam_data(spam_url=SPAM_URL, spam_path=SPAM_PATH):
     if not os.path.isdir(spam_path):

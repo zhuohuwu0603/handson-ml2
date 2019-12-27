@@ -171,7 +171,7 @@ X_std = scaler.scale_
 
 
 def save_to_multiple_csv_files(data, name_prefix, header=None, n_parts=10):
-    housing_dir = os.path.join("datasets", "housing")
+    housing_dir = os.path.join("./../datasets", "housing")
     os.makedirs(housing_dir, exist_ok=True)
     path_format = os.path.join(housing_dir, "my_{}_{:02d}.csv")
 
@@ -933,7 +933,7 @@ import tarfile
 import urllib
 
 DOWNLOAD_ROOT = "https://raw.githubusercontent.com/ageron/handson-ml2/master/"
-HOUSING_PATH = os.path.join("datasets", "housing")
+HOUSING_PATH = os.path.join("./../datasets", "housing")
 HOUSING_URL = DOWNLOAD_ROOT + "datasets/housing/housing.tgz"
 
 def fetch_housing_data(housing_url=HOUSING_URL, housing_path=HOUSING_PATH):

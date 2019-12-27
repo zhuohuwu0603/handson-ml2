@@ -16,7 +16,7 @@ import pandas as pd
 import sklearn.linear_model
 
 import os
-datapath = os.path.join("datasets", "lifesat", "")
+datapath = os.path.join("./../datasets", "lifesat", "")
 
 # Load the data
 oecd_bli = pd.read_csv(datapath + "oecd_bli_2015.csv", thousands=',')

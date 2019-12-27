@@ -30,6 +30,7 @@ assert sys.version_info >= (3, 5)
 import sklearn
 assert sklearn.__version__ >= "0.20"
 
+import urllib.request
 
 # This function just merges the OECD's life satisfaction data and the IMF's GDP per capita data. It's a bit too long and boring and it's not specific to Machine Learning, which is why I left it out of the book.
 
@@ -55,7 +56,7 @@ def prepare_country_stats(oecd_bli, gdp_per_capita):
 
 
 import os
-datapath = os.path.join("datasets", "lifesat", "")
+datapath = os.path.join("./../datasets", "lifesat", "")
 
 
 # In[5]:
@@ -266,7 +267,7 @@ plt.show()
 # In[17]:
 
 
-sample_data.to_csv(os.path.join("datasets", "lifesat", "lifesat.csv"))
+sample_data.to_csv(os.path.join("./../datasets", "lifesat", "lifesat.csv"))
 
 
 # In[18]:

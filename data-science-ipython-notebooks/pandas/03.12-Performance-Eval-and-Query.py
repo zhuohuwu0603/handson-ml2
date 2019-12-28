@@ -32,7 +32,7 @@ import numpy as np
 rng = np.random.RandomState(42)
 x = rng.rand(1000000)
 y = rng.rand(1000000)
-get_ipython().run_line_magic('timeit', 'x + y')
+# get_ipython().run_line_magic('timeit', 'x + y')
 
 
 # As discussed in [Computation on NumPy Arrays: Universal Functions](02.03-Computation-on-arrays-ufuncs.ipynb), this is much faster than doing the addition via a Python loop or comprehension:
@@ -40,7 +40,7 @@ get_ipython().run_line_magic('timeit', 'x + y')
 # In[2]:
 
 
-get_ipython().run_line_magic('timeit', 'np.fromiter((xi + yi for xi, yi in zip(x, y)), dtype=x.dtype, count=len(x))')
+# get_ipython().run_line_magic('timeit', 'np.fromiter((xi + yi for xi, yi in zip(x, y)), dtype=x.dtype, count=len(x))')
 
 
 # But this abstraction can become less efficient when computing compound expressions.
@@ -97,7 +97,7 @@ df1, df2, df3, df4 = (pd.DataFrame(rng.rand(nrows, ncols))
 # In[7]:
 
 
-get_ipython().run_line_magic('timeit', 'df1 + df2 + df3 + df4')
+# get_ipython().run_line_magic('timeit', 'df1 + df2 + df3 + df4')
 
 
 # The same result can be computed via ``pd.eval`` by constructing the expression as a string:
@@ -105,7 +105,7 @@ get_ipython().run_line_magic('timeit', 'df1 + df2 + df3 + df4')
 # In[8]:
 
 
-get_ipython().run_line_magic('timeit', "pd.eval('df1 + df2 + df3 + df4')")
+# get_ipython().run_line_magic('timeit', "pd.eval('df1 + df2 + df3 + df4')")
 
 
 # The ``eval()`` version of this expression is about 50% faster (and uses much less memory), while giving the same result:

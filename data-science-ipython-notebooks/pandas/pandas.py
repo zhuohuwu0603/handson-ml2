@@ -1063,5 +1063,5 @@ df_1.to_csv('../data/ozone_copy.csv',
 # In[119]:
 
 
-get_ipython().system('ls -l ../data/')
+# get_ipython().system('ls -l ../data/')
 

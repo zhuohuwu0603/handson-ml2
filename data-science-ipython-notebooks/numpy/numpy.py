@@ -194,7 +194,7 @@ np.hstack([b, d])
 # In[26]:
 
 
-get_ipython().run_line_magic('matplotlib', 'inline')
+# get_ipython().run_line_magic('matplotlib', 'inline')
 
 import pylab as plt
 import seaborn

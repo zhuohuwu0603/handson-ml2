@@ -37,7 +37,7 @@
 
 import matplotlib.pyplot as plt
 plt.style.use('classic')
-get_ipython().run_line_magic('matplotlib', 'inline')
+# get_ipython().run_line_magic('matplotlib', 'inline')
 import numpy as np
 import pandas as pd
 

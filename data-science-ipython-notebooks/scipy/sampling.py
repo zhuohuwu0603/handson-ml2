@@ -29,7 +29,7 @@ COLOR3 = '#fdc086'
 COLOR4 = '#ffff99'
 COLOR5 = '#386cb0'
 
-get_ipython().run_line_magic('matplotlib', 'inline')
+# get_ipython().run_line_magic('matplotlib', 'inline')
 
 
 # Part One

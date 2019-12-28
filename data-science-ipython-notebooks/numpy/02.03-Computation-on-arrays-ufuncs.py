@@ -57,7 +57,7 @@ compute_reciprocals(values)
 
 
 big_array = np.random.randint(1, 100, size=1000000)
-get_ipython().run_line_magic('timeit', 'compute_reciprocals(big_array)')
+# get_ipython().run_line_magic('timeit', 'compute_reciprocals(big_array)')
 
 
 # It takes several seconds to compute these million operations and to store the result!
@@ -86,7 +86,7 @@ print(1.0 / values)
 # In[4]:
 
 
-get_ipython().run_line_magic('timeit', '(1.0 / big_array)')
+# get_ipython().run_line_magic('timeit', '(1.0 / big_array)')
 
 
 # Vectorized operations in NumPy are implemented via *ufuncs*, whose main purpose is to quickly execute repeated operations on values in NumPy arrays.

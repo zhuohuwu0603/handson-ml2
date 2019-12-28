@@ -76,7 +76,7 @@ vals1
 
 for dtype in ['object', 'int']:
     print("dtype =", dtype)
-    get_ipython().run_line_magic('timeit', 'np.arange(1E6, dtype=dtype).sum()')
+    # get_ipython().run_line_magic('timeit', 'np.arange(1E6, dtype=dtype).sum()')
     print()
 
 

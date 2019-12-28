@@ -129,7 +129,7 @@
 # In[1]:
 
 
-get_ipython().system('python --version')
+# get_ipython().system('python --version')
 
 
 # # How to set up your environment
@@ -141,7 +141,7 @@ get_ipython().system('python --version')
 # In[3]:
 
 
-get_ipython().system('cat deep-learning.yml')
+# get_ipython().system('cat deep-learning.yml')
 
 
 # # Recreate the Conda Environment

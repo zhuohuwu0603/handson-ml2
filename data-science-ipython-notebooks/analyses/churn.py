@@ -42,7 +42,7 @@ from sklearn.preprocessing import StandardScaler
 from sklearn.cross_validation import train_test_split
 from sklearn.svm import SVC
 from sklearn.ensemble import RandomForestClassifier as RF
-get_ipython().run_line_magic('matplotlib', 'inline')
+# get_ipython().run_line_magic('matplotlib', 'inline')
 
 
 # In[2]:
@@ -245,7 +245,7 @@ confusion_matrices = [
 
 # Pyplot code not included to reduce clutter
 # from churn_display import draw_confusion_matrices
-get_ipython().run_line_magic('matplotlib', 'inline')
+# get_ipython().run_line_magic('matplotlib', 'inline')
 
 draw_confusion_matrices(confusion_matrices,class_names)
 

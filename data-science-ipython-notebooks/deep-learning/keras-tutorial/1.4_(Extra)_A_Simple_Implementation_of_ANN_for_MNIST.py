@@ -30,7 +30,7 @@ path_to_dataset = "euroscipy2016_dl-tutorial/data/mnist.pkl.gz"
 # In[3]:
 
 
-get_ipython().system('mkdir -p $HOME/.keras/datasets/euroscipy2016_dl-tutorial/data/')
+# get_ipython().system('mkdir -p $HOME/.keras/datasets/euroscipy2016_dl-tutorial/data/')
 
 
 # In[4]:

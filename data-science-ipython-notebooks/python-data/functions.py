@@ -21,7 +21,7 @@
 # In[1]:
 
 
-get_ipython().run_cell_magic('file', 'transform_util.py', 'import re\n\n\nclass TransformUtil:\n\n    @classmethod\n    def remove_punctuation(cls, value):\n        """Removes !, #, and ?.\n        """        \n        return re.sub(\'[!#?]\', \'\', value) \n\n    @classmethod\n    def clean_strings(cls, strings, ops): \n        """General purpose method to clean strings.\n\n        Pass in a sequence of strings and the operations to perform.\n        """        \n        result = [] \n        for value in strings: \n            for function in ops: \n                value = function(value) \n            result.append(value) \n        return result')
+# get_ipython().run_cell_magic('file', 'transform_util.py', 'import re\n\n\nclass TransformUtil:\n\n    @classmethod\n    def remove_punctuation(cls, value):\n        """Removes !, #, and ?.\n        """        \n        return re.sub(\'[!#?]\', \'\', value) \n\n    @classmethod\n    def clean_strings(cls, strings, ops): \n        """General purpose method to clean strings.\n\n        Pass in a sequence of strings and the operations to perform.\n        """        \n        result = [] \n        for value in strings: \n            for function in ops: \n                value = function(value) \n            result.append(value) \n        return result')
 
 
 # Below are nose tests that exercises the utility functions:
@@ -29,7 +29,7 @@ get_ipython().run_cell_magic('file', 'transform_util.py', 'import re\n\n\nclass 
 # In[2]:
 
 
-get_ipython().run_cell_magic('file', 'tests/test_transform_util.py', "from nose.tools import assert_equal\nfrom ..transform_util import TransformUtil\n\n\nclass TestTransformUtil():\n\n    states = [' Alabama ', 'Georgia!', 'Georgia', 'georgia', \\\n          'FlOrIda', 'south carolina##', 'West virginia?']\n    \n    expected_output = ['Alabama',\n                       'Georgia',\n                       'Georgia',\n                       'Georgia',\n                       'Florida',\n                       'South Carolina',\n                       'West Virginia']\n    \n    def test_remove_punctuation(self):\n        assert_equal(TransformUtil.remove_punctuation('!#?'), '')\n        \n    def test_map_remove_punctuation(self):\n        # Map applies a function to a collection\n        output = map(TransformUtil.remove_punctuation, self.states)\n        assert_equal('!#?' not in output, True)\n\n    def test_clean_strings(self):\n        clean_ops = [str.strip, TransformUtil.remove_punctuation, str.title] \n        output = TransformUtil.clean_strings(self.states, clean_ops)\n        assert_equal(output, self.expected_output)")
+# get_ipython().run_cell_magic('file', 'tests/test_transform_util.py', "from nose.tools import assert_equal\nfrom ..transform_util import TransformUtil\n\n\nclass TestTransformUtil():\n\n    states = [' Alabama ', 'Georgia!', 'Georgia', 'georgia', \\\n          'FlOrIda', 'south carolina##', 'West virginia?']\n    \n    expected_output = ['Alabama',\n                       'Georgia',\n                       'Georgia',\n                       'Georgia',\n                       'Florida',\n                       'South Carolina',\n                       'West Virginia']\n    \n    def test_remove_punctuation(self):\n        assert_equal(TransformUtil.remove_punctuation('!#?'), '')\n        \n    def test_map_remove_punctuation(self):\n        # Map applies a function to a collection\n        output = map(TransformUtil.remove_punctuation, self.states)\n        assert_equal('!#?' not in output, True)\n\n    def test_clean_strings(self):\n        clean_ops = [str.strip, TransformUtil.remove_punctuation, str.title] \n        output = TransformUtil.clean_strings(self.states, clean_ops)\n        assert_equal(output, self.expected_output)")
 
 
 # Execute the nose tests in verbose mode:
@@ -37,7 +37,7 @@ get_ipython().run_cell_magic('file', 'tests/test_transform_util.py', "from nose.
 # In[3]:
 
 
-get_ipython().system('nosetests tests/test_transform_util.py -v')
+# get_ipython().system('nosetests tests/test_transform_util.py -v')
 
 
 # ## Lambda Functions

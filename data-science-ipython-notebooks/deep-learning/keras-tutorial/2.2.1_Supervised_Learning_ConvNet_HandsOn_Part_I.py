@@ -37,7 +37,7 @@ from keras.datasets import mnist
 # In[2]:
 
 
-get_ipython().system('mkdir -p $HOME/.keras/datasets/euroscipy_2016_dl-keras/data/')
+# get_ipython().system('mkdir -p $HOME/.keras/datasets/euroscipy_2016_dl-keras/data/')
 
 
 # In[4]:
@@ -121,7 +121,7 @@ path_to_dataset = "euroscipy_2016_dl-keras/data/mnist.pkl.gz"
 
 from matplotlib import pyplot
 import matplotlib as mpl
-get_ipython().run_line_magic('matplotlib', 'inline')
+# get_ipython().run_line_magic('matplotlib', 'inline')
 
 
 # In[26]:

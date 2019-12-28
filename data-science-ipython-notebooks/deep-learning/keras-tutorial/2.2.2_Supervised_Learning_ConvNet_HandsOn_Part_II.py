@@ -215,7 +215,7 @@ print('Test accuracy:', accuracy)
 
 import matplotlib.pyplot as plt
 
-get_ipython().run_line_magic('matplotlib', 'inline')
+# get_ipython().run_line_magic('matplotlib', 'inline')
 
 
 # In[57]:
@@ -408,7 +408,7 @@ def build_model():
 
 
 #Timing how long it takes to build the model and test it.
-get_ipython().run_line_magic('timeit', '-n1 -r1 build_model()')
+# get_ipython().run_line_magic('timeit', '-n1 -r1 build_model()')
 
 
 # # Batch Normalisation

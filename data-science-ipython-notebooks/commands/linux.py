@@ -21,7 +21,7 @@
 # In[ ]:
 
 
-get_ipython().system('df -h')
+# get_ipython().system('df -h')
 
 
 # Display human-readable (-h) disk usage statistics:
@@ -29,7 +29,7 @@ get_ipython().system('df -h')
 # In[ ]:
 
 
-get_ipython().system('du -h ./')
+# get_ipython().system('du -h ./')
 
 
 # Display human-readable (-h) disk usage statistics, showing only the total usage (-s):
@@ -37,7 +37,7 @@ get_ipython().system('du -h ./')
 # In[ ]:
 
 
-get_ipython().system('du -sh ../')
+# get_ipython().system('du -sh ../')
 
 
 # Display the human-readable (-h) disk usage statistics, showing also the grand total for all file types (-c):
@@ -45,7 +45,7 @@ get_ipython().system('du -sh ../')
 # In[ ]:
 
 
-get_ipython().system('du -csh ./')
+# get_ipython().system('du -csh ./')
 
 
 # ## Splitting Files
@@ -55,7 +55,7 @@ get_ipython().system('du -csh ./')
 # In[ ]:
 
 
-get_ipython().system('wc -l < file.txt')
+# get_ipython().system('wc -l < file.txt')
 
 
 # Count the number of lines in a file with grep:
@@ -63,7 +63,7 @@ get_ipython().system('wc -l < file.txt')
 # In[ ]:
 
 
-get_ipython().system('grep -c "." file.txt')
+# get_ipython().system('grep -c "." file.txt')
 
 
 # Split a file into multiple files based on line count:
@@ -71,7 +71,7 @@ get_ipython().system('grep -c "." file.txt')
 # In[ ]:
 
 
-get_ipython().system('split -l 20 file.txt new')
+# get_ipython().system('split -l 20 file.txt new')
 
 
 # Split a file into multiple files based on line count, use suffix of length 1:
@@ -79,7 +79,7 @@ get_ipython().system('split -l 20 file.txt new')
 # In[ ]:
 
 
-get_ipython().system('split -l 802 -a 1 file.csv dir/part-user-csv.tbl-')
+# get_ipython().system('split -l 802 -a 1 file.csv dir/part-user-csv.tbl-')
 
 
 # ## Grep, Sed
@@ -89,7 +89,7 @@ get_ipython().system('split -l 802 -a 1 file.csv dir/part-user-csv.tbl-')
 # In[ ]:
 
 
-get_ipython().system('ls -1 | grep .txt | wc -l')
+# get_ipython().system('ls -1 | grep .txt | wc -l')
 
 
 # Check number of MapReduce records processed, outputting the results to the terminal:
@@ -97,7 +97,7 @@ get_ipython().system('ls -1 | grep .txt | wc -l')
 # In[ ]:
 
 
-get_ipython().system('cat * | grep -c "foo" folder/part*')
+# get_ipython().system('cat * | grep -c "foo" folder/part*')
 
 
 # Delete matching lines in place:
@@ -105,7 +105,7 @@ get_ipython().system('cat * | grep -c "foo" folder/part*')
 # In[ ]:
 
 
-get_ipython().system("sed -i '/Important Lines: /d’ original_file")
+# get_ipython().system("sed -i '/Important Lines: /d’ original_file")
 
 
 # ## Compression
@@ -114,31 +114,31 @@ get_ipython().system("sed -i '/Important Lines: /d’ original_file")
 
 
 # Compress zip
-get_ipython().system('zip -r archive_name.zip folder_to_compress')
+# get_ipython().system('zip -r archive_name.zip folder_to_compress')
 
 # Compress zip without invisible Mac resources
-get_ipython().system('zip -r -X archive_name.zip folder_to_compress')
+# get_ipython().system('zip -r -X archive_name.zip folder_to_compress')
 
 # Extract zip
-get_ipython().system('unzip archive_name.zip')
+# get_ipython().system('unzip archive_name.zip')
 
 # Compress TAR.GZ
-get_ipython().system('tar -zcvf archive_name.tar.gz folder_to_compress')
+# get_ipython().system('tar -zcvf archive_name.tar.gz folder_to_compress')
 
 # Extract TAR.GZ
-get_ipython().system('tar -zxvf archive_name.tar.gz')
+# get_ipython().system('tar -zxvf archive_name.tar.gz')
 
 # Compress TAR.BZ2
-get_ipython().system('tar -jcvf archive_name.tar.bz2 folder_to_compress')
+# get_ipython().system('tar -jcvf archive_name.tar.bz2 folder_to_compress')
 
 # Extract TAR.BZ2
-get_ipython().system('tar -jxvf archive_name.tar.bz2')
+# get_ipython().system('tar -jxvf archive_name.tar.bz2')
 
 # Extract GZ
-get_ipython().system('gunzip archivename.gz')
+# get_ipython().system('gunzip archivename.gz')
 
 # Uncompress all tar.gz in current directory to another directory
-get_ipython().system('for i in *.tar.gz; do echo working on $i; tar xvzf $i -C directory/ ; done')
+# get_ipython().system('for i in *.tar.gz; do echo working on $i; tar xvzf $i -C directory/ ; done')
 
 
 # ## Curl
@@ -147,28 +147,28 @@ get_ipython().system('for i in *.tar.gz; do echo working on $i; tar xvzf $i -C d
 
 
 # Display the curl output:
-get_ipython().system('curl donnemartin.com')
+# get_ipython().system('curl donnemartin.com')
 
 # Download the curl output to a file:
-get_ipython().system('curl donnemartin.com > donnemartin.html')
+# get_ipython().system('curl donnemartin.com > donnemartin.html')
 
 # Download the curl output to a file -o
-get_ipython().system('curl -o image.png http://i1.wp.com/donnemartin.com/wp-content/uploads/2015/02/splunk_cover.png')
+# get_ipython().system('curl -o image.png http://i1.wp.com/donnemartin.com/wp-content/uploads/2015/02/splunk_cover.png')
 
 # Download the curl output to a file, keeping the original file name -O
-get_ipython().system('curl -O http://i1.wp.com/donnemartin.com/wp-content/uploads/2015/02/splunk_cover.png')
+# get_ipython().system('curl -O http://i1.wp.com/donnemartin.com/wp-content/uploads/2015/02/splunk_cover.png')
     
 # Download multiple files, attempting to reuse the same connection
-get_ipython().system('curl -O url1 -O url2')
+# get_ipython().system('curl -O url1 -O url2')
 
 # Follow redirects -L
-get_ipython().system('curl -L url')
+# get_ipython().system('curl -L url')
 
 # Resume a previous download -C -
-get_ipython().system('curl -C - -O url')
+# get_ipython().system('curl -C - -O url')
 
 # Authenticate -u
-get_ipython().system('curl -u username:password url')
+# get_ipython().system('curl -u username:password url')
 
 
 # ## View Running Processes
@@ -177,19 +177,19 @@ get_ipython().system('curl -u username:password url')
 
 
 # Display sorted info about processes
-get_ipython().system('top')
+# get_ipython().system('top')
 
 # Display all running processes
-get_ipython().system('ps aux | less')
+# get_ipython().system('ps aux | less')
 
 # Display all matching running processes with full formatting
-get_ipython().system('ps -ef | grep python')
+# get_ipython().system('ps -ef | grep python')
 
 # See processes run by user dmartin
-get_ipython().system('ps -u dmartin')
+# get_ipython().system('ps -u dmartin')
 
 # Display running processes as a tree
-get_ipython().system('pstree')
+# get_ipython().system('pstree')
 
 
 # ## Terminal Syntax Highlighting
@@ -210,7 +210,7 @@ alias ls='ls -GFh'
 # In[ ]:
 
 
-get_ipython().system('source ~/.bash_profile')
+# get_ipython().system('source ~/.bash_profile')
 
 
 # ## Vim
@@ -254,7 +254,7 @@ Write the current file and quit:  :wq
 # In[ ]:
 
 
-get_ipython().system('vimtutor')
+# get_ipython().system('vimtutor')
 
 
 # Run the following commands to enable syntax colors:
@@ -262,8 +262,8 @@ get_ipython().system('vimtutor')
 # In[ ]:
 
 
-get_ipython().system('cd ~')
-get_ipython().system('vim .vimrc')
+# get_ipython().system('cd ~')
+# get_ipython().system('vim .vimrc')
 # Add the following to ~/.vimrc
 syntax on
 :wq

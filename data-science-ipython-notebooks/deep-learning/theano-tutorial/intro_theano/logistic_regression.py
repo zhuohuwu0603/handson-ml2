@@ -295,7 +295,7 @@ print('The code ran for %d epochs, with %f epochs/sec' %
 # In[ ]:
 
 
-get_ipython().run_line_magic('matplotlib', 'inline')
+# get_ipython().run_line_magic('matplotlib', 'inline')
 import matplotlib.pyplot as plt
 from utils import tile_raster_images
 

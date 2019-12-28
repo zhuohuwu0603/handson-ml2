@@ -51,8 +51,8 @@ np.sum(L)
 
 
 big_array = np.random.rand(1000000)
-get_ipython().run_line_magic('timeit', 'sum(big_array)')
-get_ipython().run_line_magic('timeit', 'np.sum(big_array)')
+# get_ipython().run_line_magic('timeit', 'sum(big_array)')
+# get_ipython().run_line_magic('timeit', 'np.sum(big_array)')
 
 
 # Be careful, though: the ``sum`` function and the ``np.sum`` function are not identical, which can sometimes lead to confusion!
@@ -79,8 +79,8 @@ np.min(big_array), np.max(big_array)
 # In[7]:
 
 
-get_ipython().run_line_magic('timeit', 'min(big_array)')
-get_ipython().run_line_magic('timeit', 'np.min(big_array)')
+# get_ipython().run_line_magic('timeit', 'min(big_array)')
+# get_ipython().run_line_magic('timeit', 'np.min(big_array)')
 
 
 # For ``min``, ``max``, ``sum``, and several other NumPy aggregates, a shorter syntax is to use methods of the array object itself:
@@ -170,7 +170,7 @@ M.max(axis=1)
 # In[13]:
 
 
-get_ipython().system('head -4 data/president_heights.csv')
+# get_ipython().system('head -4 data/president_heights.csv')
 
 
 # We'll use the Pandas package, which we'll explore more fully in [Chapter 3](03.00-Introduction-to-Pandas.ipynb), to read the file and extract this information (note that the heights are measured in centimeters).
@@ -213,7 +213,7 @@ print("75th percentile:   ", np.percentile(heights, 75))
 # In[17]:
 
 
-get_ipython().run_line_magic('matplotlib', 'inline')
+# get_ipython().run_line_magic('matplotlib', 'inline')
 import matplotlib.pyplot as plt
 import seaborn; seaborn.set()  # set plot style
 

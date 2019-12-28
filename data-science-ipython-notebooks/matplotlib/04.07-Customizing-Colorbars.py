@@ -30,7 +30,7 @@ plt.style.use('classic')
 # In[2]:
 
 
-get_ipython().run_line_magic('matplotlib', 'inline')
+# get_ipython().run_line_magic('matplotlib', 'inline')
 import numpy as np
 
 

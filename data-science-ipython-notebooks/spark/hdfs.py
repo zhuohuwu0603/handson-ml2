@@ -10,7 +10,7 @@
 # In[ ]:
 
 
-get_ipython().system('hdfs')
+# get_ipython().system('hdfs')
 
 
 # Run a file system command on the file systems (FsShell):
@@ -18,7 +18,7 @@ get_ipython().system('hdfs')
 # In[ ]:
 
 
-get_ipython().system('hdfs dfs')
+# get_ipython().system('hdfs dfs')
 
 
 # List the user's home directory:
@@ -26,7 +26,7 @@ get_ipython().system('hdfs dfs')
 # In[ ]:
 
 
-get_ipython().system('hdfs dfs -ls')
+# get_ipython().system('hdfs dfs -ls')
 
 
 # List the HDFS root directory:
@@ -34,7 +34,7 @@ get_ipython().system('hdfs dfs -ls')
 # In[ ]:
 
 
-get_ipython().system('hdfs dfs -ls /')
+# get_ipython().system('hdfs dfs -ls /')
 
 
 # Copy a local file to the user's directory on HDFS:
@@ -42,7 +42,7 @@ get_ipython().system('hdfs dfs -ls /')
 # In[ ]:
 
 
-get_ipython().system('hdfs dfs -put file.txt file.txt')
+# get_ipython().system('hdfs dfs -put file.txt file.txt')
 
 
 # Display the contents of the specified HDFS file:
@@ -50,7 +50,7 @@ get_ipython().system('hdfs dfs -put file.txt file.txt')
 # In[ ]:
 
 
-get_ipython().system('hdfs dfs -cat file.txt')
+# get_ipython().system('hdfs dfs -cat file.txt')
 
 
 # Print the last 10 lines of the file to the terminal:
@@ -58,7 +58,7 @@ get_ipython().system('hdfs dfs -cat file.txt')
 # In[ ]:
 
 
-get_ipython().system('hdfs dfs -cat file.txt | tail -n 10')
+# get_ipython().system('hdfs dfs -cat file.txt | tail -n 10')
 
 
 # View a directory and all of its files:
@@ -66,7 +66,7 @@ get_ipython().system('hdfs dfs -cat file.txt | tail -n 10')
 # In[ ]:
 
 
-get_ipython().system('hdfs dfs -cat dir/* | less')
+# get_ipython().system('hdfs dfs -cat dir/* | less')
 
 
 # Copy an HDFS file to local:
@@ -74,7 +74,7 @@ get_ipython().system('hdfs dfs -cat dir/* | less')
 # In[ ]:
 
 
-get_ipython().system('hdfs dfs -get file.txt file.txt')
+# get_ipython().system('hdfs dfs -get file.txt file.txt')
 
 
 # Create a directory on HDFS:
@@ -82,7 +82,7 @@ get_ipython().system('hdfs dfs -get file.txt file.txt')
 # In[ ]:
 
 
-get_ipython().system('hdfs dfs -mkdir dir')
+# get_ipython().system('hdfs dfs -mkdir dir')
 
 
 # Recursively delete the specified directory and all of its contents:
@@ -90,7 +90,7 @@ get_ipython().system('hdfs dfs -mkdir dir')
 # In[ ]:
 
 
-get_ipython().system('hdfs dfs -rm -r dir')
+# get_ipython().system('hdfs dfs -rm -r dir')
 
 
 # Specify HDFS file in Spark (paths are relative to the user's home HDFS directory):

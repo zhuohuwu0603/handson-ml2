@@ -188,7 +188,7 @@ net.blobs.keys()
 # In[ ]:
 
 
-get_ipython().system('mkdir frames')
+# get_ipython().system('mkdir frames')
 frame = img
 frame_i = 0
 

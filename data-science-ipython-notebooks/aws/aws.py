@@ -21,7 +21,7 @@
 # In[ ]:
 
 
-get_ipython().system('ssh -i key.pem ubuntu@ipaddress')
+# get_ipython().system('ssh -i key.pem ubuntu@ipaddress')
 
 
 # Connect to an Amazon Linux EC2 instance through SSH with the given key:
@@ -29,7 +29,7 @@ get_ipython().system('ssh -i key.pem ubuntu@ipaddress')
 # In[ ]:
 
 
-get_ipython().system('ssh -i key.pem ec2-user@ipaddress')
+# get_ipython().system('ssh -i key.pem ec2-user@ipaddress')
 
 
 # ## Boto
@@ -41,7 +41,7 @@ get_ipython().system('ssh -i key.pem ec2-user@ipaddress')
 # In[ ]:
 
 
-get_ipython().system('pip install Boto')
+# get_ipython().system('pip install Boto')
 
 
 # Configure boto by creating a ~/.boto file with the following:
@@ -117,7 +117,7 @@ bucket.delete()
 # In[ ]:
 
 
-get_ipython().system('sudo apt-get install s3cmd')
+# get_ipython().system('sudo apt-get install s3cmd')
 
 
 # Running the following command will prompt you to enter your AWS access and AWS secret keys. To follow security best practices, make sure you are using an IAM account as opposed to using the root account.
@@ -127,7 +127,7 @@ get_ipython().system('sudo apt-get install s3cmd')
 # In[ ]:
 
 
-get_ipython().system('s3cmd --configure')
+# get_ipython().system('s3cmd --configure')
 
 
 # Frequently used S3cmds:
@@ -136,49 +136,49 @@ get_ipython().system('s3cmd --configure')
 
 
 # List all buckets
-get_ipython().system('s3cmd ls')
+# get_ipython().system('s3cmd ls')
 
 # List the contents of the bucket
-get_ipython().system('s3cmd ls s3://my-bucket-name')
+# get_ipython().system('s3cmd ls s3://my-bucket-name')
 
 # Upload a file into the bucket (private)
-get_ipython().system('s3cmd put myfile.txt s3://my-bucket-name/myfile.txt')
+# get_ipython().system('s3cmd put myfile.txt s3://my-bucket-name/myfile.txt')
 
 # Upload a file into the bucket (public)
-get_ipython().system('s3cmd put --acl-public --guess-mime-type myfile.txt s3://my-bucket-name/myfile.txt')
+# get_ipython().system('s3cmd put --acl-public --guess-mime-type myfile.txt s3://my-bucket-name/myfile.txt')
 
 # Recursively upload a directory to s3
-get_ipython().system('s3cmd put --recursive my-local-folder-path/ s3://my-bucket-name/mydir/')
+# get_ipython().system('s3cmd put --recursive my-local-folder-path/ s3://my-bucket-name/mydir/')
 
 # Download a file
-get_ipython().system('s3cmd get s3://my-bucket-name/myfile.txt myfile.txt')
+# get_ipython().system('s3cmd get s3://my-bucket-name/myfile.txt myfile.txt')
 
 # Recursively download files that start with myfile
-get_ipython().system('s3cmd --recursive get s3://my-bucket-name/myfile')
+# get_ipython().system('s3cmd --recursive get s3://my-bucket-name/myfile')
 
 # Delete a file
-get_ipython().system('s3cmd del s3://my-bucket-name/myfile.txt')
+# get_ipython().system('s3cmd del s3://my-bucket-name/myfile.txt')
 
 # Delete a bucket
-get_ipython().system('s3cmd del --recursive s3://my-bucket-name/')
+# get_ipython().system('s3cmd del --recursive s3://my-bucket-name/')
 
 # Create a bucket
-get_ipython().system('s3cmd mb s3://my-bucket-name')
+# get_ipython().system('s3cmd mb s3://my-bucket-name')
 
 # List bucket disk usage (human readable)
-get_ipython().system('s3cmd du -H s3://my-bucket-name/')
+# get_ipython().system('s3cmd du -H s3://my-bucket-name/')
 
 # Sync local (source) to s3 bucket (destination)
-get_ipython().system('s3cmd sync my-local-folder-path/ s3://my-bucket-name/')
+# get_ipython().system('s3cmd sync my-local-folder-path/ s3://my-bucket-name/')
 
 # Sync s3 bucket (source) to local (destination)
-get_ipython().system('s3cmd sync s3://my-bucket-name/ my-local-folder-path/')
+# get_ipython().system('s3cmd sync s3://my-bucket-name/ my-local-folder-path/')
 
 # Do a dry-run (do not perform actual sync, but get information about what would happen)
-get_ipython().system('s3cmd --dry-run sync s3://my-bucket-name/ my-local-folder-path/')
+# get_ipython().system('s3cmd --dry-run sync s3://my-bucket-name/ my-local-folder-path/')
 
 # Apply a standard shell wildcard include to sync s3 bucket (source) to local (destination)
-get_ipython().system("s3cmd --include '2014-05-01*' sync s3://my-bucket-name/ my-local-folder-path/")
+# get_ipython().system("s3cmd --include '2014-05-01*' sync s3://my-bucket-name/ my-local-folder-path/")
 
 
 # <h2 id="s3-parallel-put">s3-parallel-put</h2>
@@ -190,8 +190,8 @@ get_ipython().system("s3cmd --include '2014-05-01*' sync s3://my-bucket-name/ my
 # In[ ]:
 
 
-get_ipython().system('sudo apt-get install boto')
-get_ipython().system('sudo apt-get install git')
+# get_ipython().system('sudo apt-get install boto')
+# get_ipython().system('sudo apt-get install git')
 
 
 # Clone the s3-parallel-put repo:
@@ -199,7 +199,7 @@ get_ipython().system('sudo apt-get install git')
 # In[ ]:
 
 
-get_ipython().system('git clone https://github.com/twpayne/s3-parallel-put.git')
+# get_ipython().system('git clone https://github.com/twpayne/s3-parallel-put.git')
 
 
 # Setup AWS keys for s3-parallel-put:
@@ -207,8 +207,8 @@ get_ipython().system('git clone https://github.com/twpayne/s3-parallel-put.git')
 # In[ ]:
 
 
-get_ipython().system('export AWS_ACCESS_KEY_ID=XXX')
-get_ipython().system('export AWS_SECRET_ACCESS_KEY=XXX')
+# get_ipython().system('export AWS_ACCESS_KEY_ID=XXX')
+# get_ipython().system('export AWS_SECRET_ACCESS_KEY=XXX')
 
 
 # Sample usage:
@@ -216,7 +216,7 @@ get_ipython().system('export AWS_SECRET_ACCESS_KEY=XXX')
 # In[ ]:
 
 
-get_ipython().system('s3-parallel-put --bucket=bucket --prefix=PREFIX SOURCE')
+# get_ipython().system('s3-parallel-put --bucket=bucket --prefix=PREFIX SOURCE')
 
 
 # Dry run of putting files in the current directory on S3 with the given S3 prefix, do not check first if they exist:
@@ -224,7 +224,7 @@ get_ipython().system('s3-parallel-put --bucket=bucket --prefix=PREFIX SOURCE')
 # In[ ]:
 
 
-get_ipython().system('s3-parallel-put --bucket=bucket --host=s3.amazonaws.com --put=stupid --dry-run --prefix=prefix/ ./')
+# get_ipython().system('s3-parallel-put --bucket=bucket --host=s3.amazonaws.com --put=stupid --dry-run --prefix=prefix/ ./')
 
 
 # <h2 id="s3distcp">S3DistCp</h2>
@@ -236,7 +236,7 @@ get_ipython().system('s3-parallel-put --bucket=bucket --host=s3.amazonaws.com --
 # In[ ]:
 
 
-get_ipython().system('rvm --default ruby-1.8.7-p374')
+# get_ipython().system('rvm --default ruby-1.8.7-p374')
 
 
 # The EMR command line below executes the following:
@@ -247,7 +247,7 @@ get_ipython().system('rvm --default ruby-1.8.7-p374')
 # In[ ]:
 
 
-get_ipython().system('./elastic-mapreduce --create --instance-group master --instance-count 1 --instance-type m1.small --instance-group core --instance-count 4 --instance-type m1.small --jar /home/hadoop/lib/emr-s3distcp-1.0.jar --args "--src,s3://my-bucket-source/,--groupBy,.*([0-9]{4}-01).*,--dest,s3://my-bucket-dest/,--targetSize,1024"')
+# get_ipython().system('./elastic-mapreduce --create --instance-group master --instance-count 1 --instance-type m1.small --instance-group core --instance-count 4 --instance-type m1.small --jar /home/hadoop/lib/emr-s3distcp-1.0.jar --args "--src,s3://my-bucket-source/,--groupBy,.*([0-9]{4}-01).*,--dest,s3://my-bucket-dest/,--targetSize,1024"')
 
 
 # For further optimization, compression can be helpful to save on AWS storage and bandwidth costs, to speed up the S3 to/from EMR transfer, and to reduce disk I/O. Note that compressed files are not easy to split for Hadoop. For example, Hadoop uses a single mapper per GZIP file, as it does not know about file boundaries.
@@ -454,7 +454,7 @@ CREATE TABLE lineorder (
 # In[ ]:
 
 
-get_ipython().system('aws kinesis create-stream --stream-name Foo --shard-count 1 --profile adminuser')
+# get_ipython().system('aws kinesis create-stream --stream-name Foo --shard-count 1 --profile adminuser')
 
 
 # List all streams:
@@ -462,7 +462,7 @@ get_ipython().system('aws kinesis create-stream --stream-name Foo --shard-count 
 # In[ ]:
 
 
-get_ipython().system('aws kinesis list-streams --profile adminuser')
+# get_ipython().system('aws kinesis list-streams --profile adminuser')
 
 
 # Get info about the stream:
@@ -470,7 +470,7 @@ get_ipython().system('aws kinesis list-streams --profile adminuser')
 # In[ ]:
 
 
-get_ipython().system('aws kinesis describe-stream --stream-name Foo --profile adminuser')
+# get_ipython().system('aws kinesis describe-stream --stream-name Foo --profile adminuser')
 
 
 # Put a record to the stream:
@@ -478,7 +478,7 @@ get_ipython().system('aws kinesis describe-stream --stream-name Foo --profile ad
 # In[ ]:
 
 
-get_ipython().system('aws kinesis put-record --stream-name Foo --data "SGVsbG8sIHRoaXMgaXMgYSB0ZXN0IDEyMy4=" --partition-key shardId-000000000000 --region us-east-1 --profile adminuser')
+# get_ipython().system('aws kinesis put-record --stream-name Foo --data "SGVsbG8sIHRoaXMgaXMgYSB0ZXN0IDEyMy4=" --partition-key shardId-000000000000 --region us-east-1 --profile adminuser')
 
 
 # Get records from a given shard:
@@ -486,7 +486,7 @@ get_ipython().system('aws kinesis put-record --stream-name Foo --data "SGVsbG8sI
 # In[ ]:
 
 
-get_ipython().system("SHARD_ITERATOR=$(aws kinesis get-shard-iterator --shard-id shardId-000000000000 --shard-iterator-type TRIM_HORIZON --stream-name Foo --query 'ShardIterator' --profile adminuser)")
+# get_ipython().system("SHARD_ITERATOR=$(aws kinesis get-shard-iterator --shard-id shardId-000000000000 --shard-iterator-type TRIM_HORIZON --stream-name Foo --query 'ShardIterator' --profile adminuser)")
 aws kinesis get-records --shard-iterator $SHARD_ITERATOR
 
 
@@ -495,7 +495,7 @@ aws kinesis get-records --shard-iterator $SHARD_ITERATOR
 # In[ ]:
 
 
-get_ipython().system('aws kinesis delete-stream --stream-name Foo --profile adminuser')
+# get_ipython().system('aws kinesis delete-stream --stream-name Foo --profile adminuser')
 
 
 # <h2 id="lambda">Lambda</h2>
@@ -505,7 +505,7 @@ get_ipython().system('aws kinesis delete-stream --stream-name Foo --profile admi
 # In[ ]:
 
 
-get_ipython().system('aws lambda list-functions     --region us-east-1     --max-items 10')
+# get_ipython().system('aws lambda list-functions     --region us-east-1     --max-items 10')
 
 
 # Upload a lambda function:
@@ -513,7 +513,7 @@ get_ipython().system('aws lambda list-functions     --region us-east-1     --max
 # In[ ]:
 
 
-get_ipython().system('aws lambda upload-function     --region us-east-1     --function-name foo     --function-zip file-path/foo.zip     --role IAM-role-ARN     --mode event     --handler foo.handler     --runtime nodejs     --debug')
+# get_ipython().system('aws lambda upload-function     --region us-east-1     --function-name foo     --function-zip file-path/foo.zip     --role IAM-role-ARN     --mode event     --handler foo.handler     --runtime nodejs     --debug')
 
 
 # Invoke a lambda function:
@@ -521,7 +521,7 @@ get_ipython().system('aws lambda upload-function     --region us-east-1     --fu
 # In[ ]:
 
 
-get_ipython().system('aws lambda  invoke-async     --function-name foo     --region us-east-1     --invoke-args foo.txt     --debug')
+# get_ipython().system('aws lambda  invoke-async     --function-name foo     --region us-east-1     --invoke-args foo.txt     --debug')
 
 
 # Update a function:
@@ -529,7 +529,7 @@ get_ipython().system('aws lambda  invoke-async     --function-name foo     --reg
 # In[ ]:
 
 
-get_ipython().system('aws lambda update-function-configuration    --function-name foo     --region us-east-1    --timeout timeout-in-seconds ')
+# get_ipython().system('aws lambda update-function-configuration    --function-name foo     --region us-east-1    --timeout timeout-in-seconds ')
 
 
 # Return metadata for a specific function:
@@ -537,7 +537,7 @@ get_ipython().system('aws lambda update-function-configuration    --function-nam
 # In[ ]:
 
 
-get_ipython().system('aws lambda get-function-configuration     --function-name foo     --region us-east-1     --debug')
+# get_ipython().system('aws lambda get-function-configuration     --function-name foo     --region us-east-1     --debug')
 
 
 # Return metadata for a specific function along with a presigned URL that you can use to download the function's .zip file that you uploaded:
@@ -545,7 +545,7 @@ get_ipython().system('aws lambda get-function-configuration     --function-name 
 # In[ ]:
 
 
-get_ipython().system('aws lambda get-function     --function-name foo     --region us-east-1     --debug')
+# get_ipython().system('aws lambda get-function     --function-name foo     --region us-east-1     --debug')
 
 
 # Add an event source:
@@ -553,7 +553,7 @@ get_ipython().system('aws lambda get-function     --function-name foo     --regi
 # In[ ]:
 
 
-get_ipython().system('aws lambda add-event-source     --region us-east-1     --function-name ProcessKinesisRecords     --role invocation-role-arn      --event-source kinesis-stream-arn     --batch-size 100')
+# get_ipython().system('aws lambda add-event-source     --region us-east-1     --function-name ProcessKinesisRecords     --role invocation-role-arn      --event-source kinesis-stream-arn     --batch-size 100')
 
 
 # Add permissions:
@@ -561,7 +561,7 @@ get_ipython().system('aws lambda add-event-source     --region us-east-1     --f
 # In[ ]:
 
 
-get_ipython().system('aws lambda add-permission     --function-name CreateThumbnail     --region us-west-2     --statement-id some-unique-id     --action "lambda:InvokeFunction"     --principal s3.amazonaws.com     --source-arn arn:aws:s3:::sourcebucket     --source-account bucket-owner-account-id')
+# get_ipython().system('aws lambda add-permission     --function-name CreateThumbnail     --region us-west-2     --statement-id some-unique-id     --action "lambda:InvokeFunction"     --principal s3.amazonaws.com     --source-arn arn:aws:s3:::sourcebucket     --source-account bucket-owner-account-id')
 
 
 # Check policy permissions:
@@ -569,7 +569,7 @@ get_ipython().system('aws lambda add-permission     --function-name CreateThumbn
 # In[ ]:
 
 
-get_ipython().system('aws lambda get-policy     --function-name function-name')
+# get_ipython().system('aws lambda get-policy     --function-name function-name')
 
 
 # Delete a lambda function:
@@ -577,5 +577,5 @@ get_ipython().system('aws lambda get-policy     --function-name function-name')
 # In[ ]:
 
 
-get_ipython().system('aws lambda delete-function     --function-name foo     --region us-east-1     --debug')
+# get_ipython().system('aws lambda delete-function     --function-name foo     --region us-east-1     --debug')
 

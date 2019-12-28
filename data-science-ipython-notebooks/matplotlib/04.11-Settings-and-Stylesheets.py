@@ -32,7 +32,7 @@ import matplotlib.pyplot as plt
 plt.style.use('classic')
 import numpy as np
 
-get_ipython().run_line_magic('matplotlib', 'inline')
+# get_ipython().run_line_magic('matplotlib', 'inline')
 
 
 # In[2]:

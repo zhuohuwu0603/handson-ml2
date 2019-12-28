@@ -390,7 +390,7 @@ goog = goog['Close']
 # In[27]:
 
 
-get_ipython().run_line_magic('matplotlib', 'inline')
+# get_ipython().run_line_magic('matplotlib', 'inline')
 import matplotlib.pyplot as plt
 import seaborn; seaborn.set()
 
@@ -576,7 +576,7 @@ data.dropna().describe()
 # In[38]:
 
 
-get_ipython().run_line_magic('matplotlib', 'inline')
+# get_ipython().run_line_magic('matplotlib', 'inline')
 import seaborn; seaborn.set()
 
 

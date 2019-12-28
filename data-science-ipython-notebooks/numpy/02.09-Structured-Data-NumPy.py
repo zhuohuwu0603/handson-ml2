@@ -204,9 +204,9 @@ data_rec.age
 # In[17]:
 
 
-get_ipython().run_line_magic('timeit', "data['age']")
-get_ipython().run_line_magic('timeit', "data_rec['age']")
-get_ipython().run_line_magic('timeit', 'data_rec.age')
+# get_ipython().run_line_magic('timeit', "data['age']")
+# get_ipython().run_line_magic('timeit', "data_rec['age']")
+# get_ipython().run_line_magic('timeit', 'data_rec.age')
 
 
 # Whether the more convenient notation is worth the additional overhead will depend on your own application.

@@ -22,7 +22,7 @@
 # In[1]:
 
 
-get_ipython().run_line_magic('matplotlib', 'inline')
+# get_ipython().run_line_magic('matplotlib', 'inline')
 import matplotlib.pyplot as plt
 import matplotlib as mpl
 plt.style.use('seaborn-whitegrid')
@@ -157,7 +157,7 @@ fig
 # In[7]:
 
 
-get_ipython().run_line_magic('matplotlib', 'inline')
+# get_ipython().run_line_magic('matplotlib', 'inline')
 
 fig, ax = plt.subplots()
 

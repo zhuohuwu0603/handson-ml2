@@ -158,7 +158,7 @@ X.shape
 # In[14]:
 
 
-get_ipython().run_line_magic('matplotlib', 'inline')
+# get_ipython().run_line_magic('matplotlib', 'inline')
 import matplotlib.pyplot as plt
 import seaborn; seaborn.set()  # for plot styling
 
@@ -302,10 +302,10 @@ plt.plot(bins, counts, linestyle='steps');
 
 
 print("NumPy routine:")
-get_ipython().run_line_magic('timeit', 'counts, edges = np.histogram(x, bins)')
+# get_ipython().run_line_magic('timeit', 'counts, edges = np.histogram(x, bins)')
 
 print("Custom routine:")
-get_ipython().run_line_magic('timeit', 'np.add.at(counts, np.searchsorted(bins, x), 1)')
+# get_ipython().run_line_magic('timeit', 'np.add.at(counts, np.searchsorted(bins, x), 1)')
 
 
 # Our own one-line algorithm is several times faster than the optimized algorithm in NumPy! How can this be?
@@ -316,10 +316,10 @@ get_ipython().run_line_magic('timeit', 'np.add.at(counts, np.searchsorted(bins, 
 
 x = np.random.randn(1000000)
 print("NumPy routine:")
-get_ipython().run_line_magic('timeit', 'counts, edges = np.histogram(x, bins)')
+# get_ipython().run_line_magic('timeit', 'counts, edges = np.histogram(x, bins)')
 
 print("Custom routine:")
-get_ipython().run_line_magic('timeit', 'np.add.at(counts, np.searchsorted(bins, x), 1)')
+# get_ipython().run_line_magic('timeit', 'np.add.at(counts, np.searchsorted(bins, x), 1)')
 
 
 # What this comparison shows is that algorithmic efficiency is almost never a simple question. An algorithm efficient for large datasets will not always be the best choice for small datasets, and vice versa (see [Big-O Notation](02.08-Sorting.ipynb#Aside:-Big-O-Notation)).

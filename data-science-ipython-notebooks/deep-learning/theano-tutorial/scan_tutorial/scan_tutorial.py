@@ -343,7 +343,7 @@ print(calculate_polynomial(test_coeff, 3))
 # In[ ]:
 
 
-get_ipython().run_line_magic('load', 'scan_ex1_solution.py')
+# get_ipython().run_line_magic('load', 'scan_ex1_solution.py')
 
 
 # ### Exercise 2 - Sampling without replacement
@@ -402,7 +402,7 @@ for i in range(10):
 # In[ ]:
 
 
-get_ipython().run_line_magic('load', 'scan_ex2_solution.py')
+# get_ipython().run_line_magic('load', 'scan_ex2_solution.py')
 
 
 # In[ ]:

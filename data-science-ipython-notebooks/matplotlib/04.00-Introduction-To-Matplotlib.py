@@ -134,7 +134,7 @@ plt.style.use('classic')
 # In[3]:
 
 
-get_ipython().run_line_magic('matplotlib', 'inline')
+# get_ipython().run_line_magic('matplotlib', 'inline')
 
 
 # After running this command (it needs to be done only once per kernel/session), any cell within the notebook that creates a plot will embed a PNG image of the resulting graphic:
@@ -167,7 +167,7 @@ fig.savefig('my_figure.png')
 # In[6]:
 
 
-get_ipython().system('ls -lh my_figure.png')
+# get_ipython().system('ls -lh my_figure.png')
 
 
 # To confirm that it contains what we think it contains, let's use the IPython ``Image`` object to display the contents of this file:

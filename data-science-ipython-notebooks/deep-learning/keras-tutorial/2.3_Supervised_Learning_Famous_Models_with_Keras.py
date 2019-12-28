@@ -36,14 +36,14 @@
 # In[3]:
 
 
-get_ipython().system('cat ~/.keras/keras.json')
+# get_ipython().system('cat ~/.keras/keras.json')
 
 
 # In[4]:
 
 
-get_ipython().system("sed -i 's/theano/tensorflow/g' ~/.keras/keras.json")
-get_ipython().system('cat ~/.keras/keras.json')
+# get_ipython().system("sed -i 's/theano/tensorflow/g' ~/.keras/keras.json")
+# get_ipython().system('cat ~/.keras/keras.json')
 
 
 # In[5]:
@@ -61,8 +61,8 @@ import theano
 # In[8]:
 
 
-get_ipython().system("sed -i 's/tensorflow/theano/g' ~/.keras/keras.json")
-get_ipython().system('cat ~/.keras/keras.json')
+# get_ipython().system("sed -i 's/tensorflow/theano/g' ~/.keras/keras.json")
+# get_ipython().system('cat ~/.keras/keras.json')
 
 
 # In[1]:
@@ -412,11 +412,11 @@ print('Predicted:', decode_predictions(preds))
 # In[ ]:
 
 
-get_ipython().run_line_magic('load', 'deep_learning_models/vgg19.py')
+# get_ipython().run_line_magic('load', 'deep_learning_models/vgg19.py')
 
 
 # In[ ]:
 
 
-get_ipython().run_line_magic('load', 'deep_learning_models/resnet50.py')
+# get_ipython().run_line_magic('load', 'deep_learning_models/resnet50.py')
 

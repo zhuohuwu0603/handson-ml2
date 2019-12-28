@@ -188,7 +188,7 @@ births.pivot_table('births', index='decade', columns='gender', aggfunc='sum')
 # In[14]:
 
 
-get_ipython().run_line_magic('matplotlib', 'inline')
+# get_ipython().run_line_magic('matplotlib', 'inline')
 import matplotlib.pyplot as plt
 sns.set()  # use Seaborn styles
 births.pivot_table('births', index='year', columns='gender', aggfunc='sum').plot()

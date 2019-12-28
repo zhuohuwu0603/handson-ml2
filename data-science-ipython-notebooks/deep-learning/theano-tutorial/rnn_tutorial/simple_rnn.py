@@ -10,7 +10,7 @@
 # In[12]:
 
 
-get_ipython().run_line_magic('matplotlib', 'inline')
+# get_ipython().run_line_magic('matplotlib', 'inline')
 from synthetic import mackey_glass
 import matplotlib.pyplot as plt
 import theano

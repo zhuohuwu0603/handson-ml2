@@ -70,7 +70,7 @@ import scipy
 
 
 # Display plots inline 
-get_ipython().run_line_magic('matplotlib', 'inline')
+# get_ipython().run_line_magic('matplotlib', 'inline')
 # Define plot's default figure size
 matplotlib.rcParams['figure.figsize'] = (10.0, 8.0)
 
@@ -406,7 +406,7 @@ class ANN:
 # create a network with two inputs, one hidden, and one output nodes
 ann = ANN(2, 1, 1)
 
-get_ipython().run_line_magic('timeit', '-n 1 -r 1 ann.train(zip(X,y), iterations=2)')
+# get_ipython().run_line_magic('timeit', '-n 1 -r 1 ann.train(zip(X,y), iterations=2)')
 
 
 # ### Predicting on training dataset and measuring in-sample accuracy
@@ -414,7 +414,7 @@ get_ipython().run_line_magic('timeit', '-n 1 -r 1 ann.train(zip(X,y), iterations
 # In[15]:
 
 
-get_ipython().run_line_magic('timeit', '-n 1 -r 1 ann.test(X)')
+# get_ipython().run_line_magic('timeit', '-n 1 -r 1 ann.test(X)')
 
 
 # In[16]:
@@ -482,7 +482,7 @@ plt.title("Our initial model")
 
 # %load solutions/sol_111.py
 ann = ANN(2, 10, 1)
-get_ipython().run_line_magic('timeit', '-n 1 -r 1 ann.train(zip(X,y), iterations=2)')
+# get_ipython().run_line_magic('timeit', '-n 1 -r 1 ann.train(zip(X,y), iterations=2)')
 plot_decision_boundary(ann)
 plt.title("Our next model with 10 hidden units")
 
@@ -504,7 +504,7 @@ plt.title("Our next model with 10 hidden units")
 
 # %load solutions/sol_112.py
 ann = ANN(2, 10, 1)
-get_ipython().run_line_magic('timeit', '-n 1 -r 1 ann.train(zip(X,y), iterations=100)')
+# get_ipython().run_line_magic('timeit', '-n 1 -r 1 ann.train(zip(X,y), iterations=100)')
 plot_decision_boundary(ann)
 plt.title("Our model with 10 hidden units and 100 iterations")
 

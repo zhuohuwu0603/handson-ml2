@@ -181,7 +181,7 @@ X = rand.rand(10, 2)
 # In[15]:
 
 
-get_ipython().run_line_magic('matplotlib', 'inline')
+# get_ipython().run_line_magic('matplotlib', 'inline')
 import matplotlib.pyplot as plt
 import seaborn; seaborn.set() # Plot styling
 plt.scatter(X[:, 0], X[:, 1], s=100);

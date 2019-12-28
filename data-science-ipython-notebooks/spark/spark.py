@@ -37,7 +37,7 @@
 # In[ ]:
 
 
-get_ipython().system('pyspark')
+# get_ipython().system('pyspark')
 
 
 # View the spark context, the main entry point to the Spark API:
@@ -361,8 +361,8 @@ for (user_id, (user_info, count)) in user_actions_with_profiles.take(10):
 # In[ ]:
 
 
-get_ipython().system('sudo service spark-master start')
-get_ipython().system('sudo service spark-worker start')
+# get_ipython().system('sudo service spark-master start')
+# get_ipython().system('sudo service spark-worker start')
 
 
 # Stop the standalone cluster's Master and Worker daemons:
@@ -370,8 +370,8 @@ get_ipython().system('sudo service spark-worker start')
 # In[ ]:
 
 
-get_ipython().system('sudo service spark-master stop')
-get_ipython().system('sudo service spark-worker stop')
+# get_ipython().system('sudo service spark-master stop')
+# get_ipython().system('sudo service spark-worker stop')
 
 
 # Restart the standalone cluster's Master and Worker daemons:
@@ -379,8 +379,8 @@ get_ipython().system('sudo service spark-worker stop')
 # In[ ]:
 
 
-get_ipython().system('sudo service spark-master stop')
-get_ipython().system('sudo service spark-worker stop')
+# get_ipython().system('sudo service spark-master stop')
+# get_ipython().system('sudo service spark-worker stop')
 
 
 # View the Spark standalone cluster UI:
@@ -396,7 +396,7 @@ http://localhost:18080//
 # In[ ]:
 
 
-get_ipython().system('MASTER=spark://localhost:7077 pyspark')
+# get_ipython().system('MASTER=spark://localhost:7077 pyspark')
 
 
 # Confirm you are connected to the correct master:
@@ -558,7 +558,7 @@ def count_text_files():
 # In[ ]:
 
 
-get_ipython().system('spark-submit --properties-file dir/myspark.conf script.py data/*')
+# get_ipython().system('spark-submit --properties-file dir/myspark.conf script.py data/*')
 
 
 # ## Configuring Spark Applications
@@ -568,7 +568,7 @@ get_ipython().system('spark-submit --properties-file dir/myspark.conf script.py 
 # In[ ]:
 
 
-get_ipython().system("spark-submit --master spark//localhost:7077 --name 'App Name' script.py data/*")
+# get_ipython().system("spark-submit --master spark//localhost:7077 --name 'App Name' script.py data/*")
 
 
 # Configure spark.conf:
@@ -586,7 +586,7 @@ spark.master    spark://localhost:7077
 # In[ ]:
 
 
-get_ipython().system('spark-submit --properties-file spark.conf script.py data/*')
+# get_ipython().system('spark-submit --properties-file spark.conf script.py data/*')
 
 
 # Set the config options programmatically:
@@ -613,7 +613,7 @@ $SPARK_HOME/conf/log4j.properties.template
 # In[ ]:
 
 
-get_ipython().system('spark-shell --master local[2]')
+# get_ipython().system('spark-shell --master local[2]')
 
 
 # Create a StreamingContext (similar to SparkContext in core Spark) with a batch duration of 1 second:

@@ -48,6 +48,8 @@
 import numpy as np # linear algebra
 import pandas as pd # data processing, CSV file I/O (e.g. pd.read_csv)
 import tensorflow as tf
+import tensorflow.compat.v1 as tf
+tf.disable_v2_behavior()
 tf.set_random_seed(777)  # for reproducibility
 
 

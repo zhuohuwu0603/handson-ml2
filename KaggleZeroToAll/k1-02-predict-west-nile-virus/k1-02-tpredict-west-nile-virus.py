@@ -309,6 +309,8 @@ print(x_train.shape)
 
 
 import tensorflow as tf
+import tensorflow.compat.v1 as tf
+tf.disable_v2_behavior()
 
 X = tf.placeholder(tf.float32, shape=[None, input_size], name="X")
 Y = tf.placeholder(tf.float32, shape=[None, 1], name="Y")

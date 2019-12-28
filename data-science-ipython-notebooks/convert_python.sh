@@ -5,6 +5,8 @@ export PATH_HOME=$PWD
 # find . -type f -follow -print|xargs ls -LR | grep ipynb | grep -v .ipynb_ | awk '{ print $9 }'
 # list file with space: for f in *\ *; do echo "$f" ; done
 # remove space in file names: for f in *\ *; do mv "$f" "${f// /_}"; done
+# for f in *\ *; do mv "$f" "${f//-/}" ; done
+# for f in *\ *; do mv "$f" "${f// /_}" ; done
 
 #for line in "$(find . -type f | grep ipynb | grep -v .ipynb_ | awk '{ print $9 }')"
 #

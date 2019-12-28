@@ -38,7 +38,7 @@ print(labels.head())
 
 
 import matplotlib.pyplot as plt
-get_ipython().run_line_magic('matplotlib', 'inline')
+# get_ipython().run_line_magic('matplotlib', 'inline')
 
 img = cv2.imread('input/train/1.jpg')
 print('Height:{0} Width:{1}'.format(img.shape[0], img.shape[1]))
@@ -49,7 +49,7 @@ plt.imshow(img)
 
 
 import matplotlib.pyplot as plt
-get_ipython().run_line_magic('matplotlib', 'inline')
+# get_ipython().run_line_magic('matplotlib', 'inline')
 
 img = cv2.imread('input/train/5.jpg')
 print('Height:{0} Width:{1}'.format(img.shape[0], img.shape[1]))

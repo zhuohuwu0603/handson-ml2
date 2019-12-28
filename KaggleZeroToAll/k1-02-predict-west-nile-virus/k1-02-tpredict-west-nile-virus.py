@@ -54,7 +54,7 @@ import numpy as np
 import pandas as pd
 import seaborn as sns
 
-get_ipython().run_line_magic('matplotlib', 'inline')
+# get_ipython().run_line_magic('matplotlib', 'inline')
 
 
 # ### data convert function and fill missing value

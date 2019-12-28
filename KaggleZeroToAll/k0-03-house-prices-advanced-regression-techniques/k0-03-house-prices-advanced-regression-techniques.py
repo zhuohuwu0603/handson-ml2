@@ -37,7 +37,7 @@ from scipy.stats import skew
 
 tf.set_random_seed(777)  # for reproducibility
 
-get_ipython().run_line_magic('matplotlib', 'inline')
+# get_ipython().run_line_magic('matplotlib', 'inline')
 
 
 # ## 1. Data description

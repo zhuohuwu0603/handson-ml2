@@ -22,13 +22,13 @@ sys.path.append('..')
 from helper import recommender as rcmd
 
 
-# # load data and setting up
-% Notes: X - num_movies (1682)  x num_features (10) matrix of movie features  
-%        Theta - num_users (943)  x num_features (10) matrix of user features  
-%        Y - num_movies x num_users matrix of user ratings of movies  
-%        R - num_movies x num_users matrix, where R(i, j) = 1 if the  
-%            i-th movie was rated by the j-th user  
-# In[24]:
+# # # load data and setting up
+# % Notes: X - num_movies (1682)  x num_features (10) matrix of movie features
+# %        Theta - num_users (943)  x num_features (10) matrix of user features
+# %        Y - num_movies x num_users matrix of user ratings of movies
+# %        R - num_movies x num_users matrix, where R(i, j) = 1 if the
+# %            i-th movie was rated by the j-th user
+# # In[24]:
 
 
 movies_mat = sio.loadmat('./data/ex8_movies.mat')

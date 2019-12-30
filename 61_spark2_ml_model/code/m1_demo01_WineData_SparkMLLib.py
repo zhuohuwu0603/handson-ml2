@@ -9,11 +9,9 @@
 
 from pyspark.sql import SparkSession
 
-spark = SparkSession     .builder     .appName('Predicting the grape variety from wine characteristics')     .getOrCreate()
-
+spark = SparkSession.builder.appName('Predicting the grape variety from wine characteristics').getOrCreate()
 
 sc=spark.sparkContext
-
 
 # <b>Dataset location: </b>https://archive.ics.uci.edu/ml/machine-learning-databases/wine/wine.data
 
